@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animals"
+        android:textSize="54sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgBut1"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTintMode="screen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTop" />
+
+    <ImageButton
+        android:id="@+id/imgBut2"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTintMode="screen"
+        app:layout_constraintEnd_toStartOf="@+id/imgBut3"
+        app:layout_constraintStart_toEndOf="@+id/imgBut1"
+        app:layout_constraintTop_toBottomOf="@+id/tvTop" />
+
+    <ImageButton
+        android:id="@+id/imgBut3"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTintMode="screen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTop" />
+
+    <ImageButton
+        android:id="@+id/imgBut4"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTintMode="screen"
+        app:layout_constraintEnd_toStartOf="@+id/imgBut5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBut1" />
+
+    <ImageButton
+        android:id="@+id/imgBut5"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTintMode="screen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBut2" />
+
+    <ImageButton
+        android:id="@+id/imgBut6"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTintMode="screen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgBut5"
+        app:layout_constraintTop_toBottomOf="@+id/imgBut3" />
+
+    <ImageButton
+        android:id="@+id/imgBut7"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTintMode="screen"
+        app:layout_constraintEnd_toStartOf="@+id/imgBut6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBut5" />
+
+    <ImageButton
+        android:id="@+id/imgBut8"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTintMode="screen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgBut4"
+        app:layout_constraintTop_toBottomOf="@+id/imgBut5" />
+
+    <TextView
+        android:id="@+id/tvLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Level 0"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgBut3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toEndOf="@+id/tvTop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.50" />
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/teal_200"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgBut1"
+        app:layout_constraintEnd_toStartOf="@+id/tvTop"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvScoreIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/ 3"
+        android:textColor="@color/teal_200"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgBut1"
+        app:layout_constraintEnd_toStartOf="@+id/tvTop"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/tvScore"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvBestScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Best Score: "
+        android:textColor="@color/purple_500"
+        app:layout_constraintBottom_toTopOf="@+id/imgBut2"
+        app:layout_constraintEnd_toEndOf="@+id/tvTop"
+        app:layout_constraintStart_toStartOf="@+id/tvTop"
+        app:layout_constraintTop_toBottomOf="@+id/tvTop" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
